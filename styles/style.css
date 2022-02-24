@@ -1,3 +1,9 @@
+/** {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: red;
+}*/
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -13,13 +19,74 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  display: flex;
+  position: relative;
+  background-color: #f2f2f2;
+  z-index: 0;
+  overflow: hidden;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__title {
+  margin-left: 64px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  align-self: center;
+  font-size: 102px;
+  line-height: 96px;
+  width: 730px;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.header__subtitle {
+  margin: 0;
+  position: absolute;
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 2;
+}
+
+.header__link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+.header__main-illustration {
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+
 .header__square-pic {
+  position: absolute;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  top: 64px;
+  right: 0;
+  z-index: 0;
+}
+
+.logo {
+  width: 183px;
+  z-index: 10;
+}
+
+.logo_place_header {
+  position: absolute;
+  background-image: url(../images/logo_place_header.svg);
+  height: 32px;
+  top: 30px;
+  left: 64px;
 }
 
 /* и элемента с модификатором вида ключ-значение */
