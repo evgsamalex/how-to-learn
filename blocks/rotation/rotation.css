@@ -7,6 +7,10 @@
     transform: rotate(0deg);
   }
 
+  /*не могу тут удалить лишнюю строку. Beautify плагин при сохранении ее сам добавляет*/
+  /*даже в примерах на keyframes - CSS: Cascading Style Sheets - MDN Web Docs https://developer.mozilla.org
+  есть пустая строка
+  */
   to {
     transform: rotate(360deg);
   }
